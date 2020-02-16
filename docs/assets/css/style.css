@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page-container, header, main, footer { 
+    max-width: 960px; 
+    margin: 0 auto; 
+}
+
+#page-container {
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+nav {
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 1.5rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: gray;
+    background-color: gray; 
+}
+
+h1, h2, h3, h4, label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+nav ul li a {
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.nav-item {
+    border-bottom: solid 2px white;
+}
+
+.nav-item-selected {
+    border-bottom: solid 2px black;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 0 1rem 2rem 1rem;
+}
+
+.title {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.content-hidden {
+    display: none;
+}
+
+.content-wrapper {
+    padding: 0 1rem;
+}
+
+.content p {
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.content ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 0.5rem 1rem;
+}
+
+.main-input {
+    width: 100%;
+}
+
+#other-input {
+    width: 100%;
+    margin-top: 0.3rem;
+}
+
+.hide-other {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    height: 10rem;
+    resize: none;
+}
+
+#submit-button {
+    cursor: pointer;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+    margin-left: auto;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#hidden-iframe {
+    display: none;
+}
+
+footer {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media only screen and (min-width: 960px) {
+    h1 {
+        font-size: 3.5rem;
+    }   
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .title {
+        padding: 0.5rem 4rem;
+    }
+
+    .content-wrapper {
+        padding: 0 4rem;
+    }
+}
